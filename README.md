@@ -1,6 +1,4 @@
-# Install Telegraf + Ping + InfluxDB with Docker
-
-
+# Install Docker + InfluxDB2.0 + Telegraf + Ping
 
 We’ll create a new network using the following command:
 
