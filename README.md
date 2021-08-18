@@ -120,5 +120,9 @@ to exit without stop agent: ctrl + q
 
 now entering influxdb in localhost: 8086 with the username and password that we created at the beginning, we could go to the data section, filtering by the bucket that we created and the ping option, we should be able to see the data arriving
 
-## References:
-1- influx cli: no puede crear auth: Error: Id debe tener una longitud de 16 bytes. https://github.com/influxdata/influx-cli/issues/69
+## References (APA):
+- influx cli: no puede crear auth: Error: Id debe tener una longitud de 16 bytes. (2021, August 18). github.com
+https://github.com/influxdata/influx-cli/issues/69
+
+- Running InfluxDB 2.0 and Telegraf Using Docker (2021, August 18). influxdata.com
+https://www.influxdata.com/blog/running-influxdb-2-0-and-telegraf-using-docker/
