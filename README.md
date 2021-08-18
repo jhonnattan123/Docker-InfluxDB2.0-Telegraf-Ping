@@ -86,7 +86,8 @@ now we will edit the configuration file that we copy in our folder
 sudo vim testdata/telegraf-config-clon/telegraf.conf
 ```
 
-add 
+now we will add all the urls to which we want to ping replace HERE-ADD-URL-TARGET-TO-PING with urls.
+add :
 ```console
 [[inputs.ping]]
   ## Hosts to send ping packets to.
