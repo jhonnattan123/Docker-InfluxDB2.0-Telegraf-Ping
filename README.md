@@ -108,6 +108,12 @@ and add (or replace) in OUTPUT PLUGINS section with this data
  bucket = "MY_PROYECT"
 ```
 
+comment the line [[outputs.influxdb]]
+
+```console
+#[[outputs.influxdb]]
+```
+
 now we will copy this configuration to the telegraf docker
 
 ```console
