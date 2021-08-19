@@ -71,7 +71,7 @@ now, using the id of the bucket and the id of the telegraf, we will create a toc
 
 ```console
 
-docker exec -it influx auth create -o backbone --read-buckets 4d6a72e1d14b6d88 --read-dashboards --read-tasks --read-telegrafs 0802bdb04b324000 --read-user
+docker exec -it influxdb influx auth create -o backbone --read-buckets 4d6a72e1d14b6d88 --read-dashboards --read-tasks --read-telegrafs 0802bdb04b324000 --read-user
 
 ID                      Description     Token                                                                       User Name        User ID                 Permissions
 0802c0a7baf99000                        _0dtBNqTVudEV0E1b5tzN8TZuvilsOST1ZNZA6_8W7mbEgmB7yPFFjxg1kNpg4hiOin5N3dbns1xXUNekiOGDA==     user            0802b3ea86799000        [write:orgs/ee7a4d9eaebc2754/buckets read:orgs/ee7a4d9eaebc2754/dashboards read:orgs/ee7a4d9eaebc2754/tasks read:orgs/ee7a4d9eaebc2754/telegrafs read:orgs/ee7a4d9eaebc2754/user
