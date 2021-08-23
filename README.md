@@ -1,3 +1,5 @@
+![influxDB](./imgs/influxDB.png)
+
 # Install Docker + InfluxDB2.0 + Telegraf + Ping
 
 We’ll create a new network using the following command:
@@ -46,11 +48,11 @@ docker run -d --name=telegraf -v /testdata/telegraf:/var/lib/influxdb --net=infl
 
 now we will get the configuration file from docker and store it for influxdb telegraf creator
 ```console
-docker cp telegraf:\etc\telegraf\telegraf.conf testdata\telegraf-config-clon\telegraf.conf
+docker cp telegraf:/etc/telegraf/telegraf.conf testdata/telegraf-config-clon/telegraf.conf
 ```
 now copy into influxdb docker
 ```console
-docker cp testdata\telegraf-config-clon\telegraf.conf influxdb:/telegraf.conf
+docker cp testdata/telegraf-config-clon/telegraf.conf influxdb:/telegraf.conf
 ```
 
 create telegraf id in influxdb docker:
@@ -117,7 +119,7 @@ comment the line [[outputs.influxdb]]
 now we will copy this configuration to the telegraf docker
 
 ```console
-docker cp testdata\telegraf-config-clon\telegraf.conf telegraf:\etc\telegraf\telegraf.conf 
+docker cp testdata/telegraf-config-clon/telegraf.conf telegraf:/etc/telegraf/telegraf.conf 
 ```
 now we restart telegraf
 ```console
@@ -127,7 +129,6 @@ to exit without stop agent: ctrl + q
 
 now entering influxdb in localhost: 8086 with the username and password that we created at the beginning, we could go to the data section, filtering by the bucket that we created and the ping option, we should be able to see the data arriving
 
-![influxDB](./imgs/influxDB.png)
 
 ## References (APA):
 - influx cli: no puede crear auth: Error: Id debe tener una longitud de 16 bytes. (2021, August 18). github.com
